@@ -1,4 +1,5 @@
 {
+  "homepage": "https://Vladivals.github.io/trello-clone",
   "name": "trello-clone",
   "version": "0.1.0",
   "private": true,
@@ -14,6 +15,7 @@
     "@testing-library/user-event": "^13.5.0",
     "bull": "^4.8.5",
     "core-js": "^2",
+    "gh-pages": "^4.0.0",
     "react": "^18.2.0",
     "react-beautiful-dnd": "^13.1.0",
     "react-dom": "18.2.0",
@@ -31,6 +33,8 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
